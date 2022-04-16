@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+}
+
+p {
+   font-weight: 300;
+   color: #111;
+}
+body {
+    min-height: 1000px;
+    background-color: blanchedalmond;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(imagens/bolobg.jpg);
+    background-size: cover;
+}
+.banner .content 
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2 {
+    font-size: 5em;
+    color: white;
+}
+.banner .content p {
+    font-size: 1em;
+    color: white;
+}
+.btn {
+    font-size: 1em;
+    display: inline-block;
+    color: #fff;
+    background: #ff0157;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover {
+    letter-spacing: 6px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: black;
+}
+header .logo span {
+    color: #ff0157;
+}
+header .navegacao {
+    position: relative;
+    display: flex;
+}
+header .navegacao li {
+    list-style: none;
+    margin-left: 30px;
+}
+header .navegacao li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header.sticky .navegacao li a {
+    color: black;
+
+}
+header .navegacao li a:hover{
+    color: #ff0157;
+}
+section {
+    padding: 100px;
+}
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+.titulotexto {
+    color: #111;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+.titulotexto span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+
+}
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.menu .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    
+}
+.menu .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text {
+    padding: 15px 0 5px 10px;
+    color: #111;
+}
+.menu .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+.testemonials {
+    background: url(imagens/fotocerta.jpg);
+    background-size: cover;
+  
+}
+.textotestemunhas {
+    color: white;
+}
+.branco .titulotexto,
+.white p
+{
+   color: #fff;
+}
+.testemonials .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.testemonials .content .box {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testemonials .content .box .imgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testemonials .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.titulo-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    font-size: 2.5em;
+    font-weight: 300;
+
+}
+
+.titulo-texto span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.linha {
+    display: flex;
+    align-items: center;
+    background: rgba(17, 17, 17, 0.87);
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 180px;
+    width: 450px;
+}
+.titulo-forms {
+    color: white;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+   
+
+}
+form [type="submit"]{
+    height: 50px;
+    width: 60%;
+    background-color: #ff0157;
+    color: white;
+    font-weight: bold;
+    
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+input{
+    margin-top: 20px;
+    height: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+footer {
+    padding-top: 40px;
+     
+}
+@media (max-width: 991px) {
+    header, header.sticky 
+{
+    padding: 10px 20px;
+}
+header .navegacao {
+    display: none;
+}
+header .navegacao.active {
+    width: 100%;
+    height:calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+header .navegacao li {
+    margin-left: 0;
+}
+header .navegacao li a {
+    
+    color: #111;
+    font-size: 1.6em;
+    
+
+}
+.menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(imagens/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.menuToggle.active {
+    background: url(imagens/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+header.sticky .menuToggle {
+    filter: invert();
+}
+section {
+    padding: 20px;
+}
+.banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+}
+.linha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right:100px;
+
+}
+.linha .col50 {
+    position: relative;
+    width: 100%;
+
+}
+.linha .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
